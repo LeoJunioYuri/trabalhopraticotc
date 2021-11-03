@@ -16,17 +16,12 @@ public class Fita {
         fita = new DoublyLinkedList<>();
         iterator = fita.iterator();
         
-        if (entrada == null || entrada.equals(""))
-            return;
+        //if (entrada == null || entrada.equals(""))
+          //  return;
         
-        for (int i = 0; i < entrada.length(); i++) {
-            if (x == xCentral)
-                valorAtual = new TipoIntString(x, ( entrada.charAt(i) ));
-            fita.add(new TipoIntString(x, ( entrada.charAt(i) )));
-            x += 27;
-        }
+        //TODO
         
-        //iterator.next();    // Aponta para o primeiro elemento
+        //iterator.next();    // apontando para o primeiro elemento
     }
     
     public DoublyLinkedList<TipoIntString> getFita() {
@@ -36,18 +31,22 @@ public class Fita {
     public int setEntrada(String entrada) {
         int x = xCentral;
         fita = new DoublyLinkedList<>();
-        
-        if (entrada == null || entrada.equals(""))
-            return 1;
-        
-        for (int i = 0; i < entrada.length(); i++) {
-            if (x == xCentral)
-                valorAtual = new TipoIntString(x, ( entrada.charAt(i) ));
-            fita.add(new TipoIntString(x, ( entrada.charAt(i) )));
-            x += 27;
-        }
-        
-        //iterator.next();    // Aponta para o primeiro elemento
-        
+
+        //TODO 
+
         return 0;
     }
+
+    public void direita(){
+        //TODO
+    }
+
+    public void esquerda(){
+        //TODO
+    }
+
+    public void getCampo(){
+        //TODO
+    }
+
+    //implementar heuristcas

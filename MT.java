@@ -5,18 +5,21 @@ public class MT {
     private String estadoAtual, estadoInicial, estadoAceitacao;
     private String parEstadoValor;
     private String entrada;
-    private HashMap< String, List<String> > mapPrograma = new HashMap<>();  // <Estado+ValorLido, estadoSeguinte, valorNovo, movimentoCabeçote>
+    private HashMap<String, List<String>> mapPrograma = new HashMap<>();  // <Estado+ValorLido, estadoSeguinte, valorNovo, movimentoCabeçote>
 
-    public MT () {
+    public MT() {
         fita = new Fita();
         passos = 0;
         rejeitado = false;
-        mapPrograma.clear();
     }
 
     public void setFita(String entrada) {
         fita.setEntrada(entrada);
         this.entrada = entrada;
+    }
+
+    public void getFita(){
+        //TODO
     }
 
 }
