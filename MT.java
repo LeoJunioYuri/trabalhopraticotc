@@ -1,25 +1,17 @@
+//classe responsável por implementar a máquina de turing
 public class MT {
-    private Fita fita;
-    private int passos;
-    private boolean rejeitado;
-    private String estadoAtual, estadoInicial, estadoAceitacao;
-    private String parEstadoValor;
-    private String entrada;
-    private HashMap<String, List<String>> mapPrograma = new HashMap<>();  // <Estado+ValorLido, estadoSeguinte, valorNovo, movimentoCabeçote>
+    private int cont;
+    private char[] fita;
+    private char[] cabeca;
 
-    public MT() {
-        fita = new Fita();
-        passos = 0;
-        rejeitado = false;
+    public MT(){
+
     }
 
-    public void setFita(String entrada) {
-        fita.setEntrada(entrada);
-        this.entrada = entrada;
-    }
+    public void direcao(){
 
-    public void getFita(){
-        //TODO
     }
-
+    public void name() {
+        
+    }
 }
