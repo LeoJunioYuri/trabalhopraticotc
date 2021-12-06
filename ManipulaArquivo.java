@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 public class ManipulaArquivo implements Serializable{
     public static void lerArquivoTexto(String nomeArquivo){
-        MT maquina = new MT();
+        MT maquina = new MT(null, null, nomeArquivo, nomeArquivo);
 
         try{
             BufferedReader arquivo = new BufferedReader(new FileReader(nomeArquivo)); 
@@ -14,7 +14,7 @@ public class ManipulaArquivo implements Serializable{
 
             
             if(conteudo.startsWith("111") && conteudo.endsWith("000")){
-                maquina.fazBlaBla(conteudo);
+                maquina.runTM(conteudo);
             }
             else{
                 System.err.println("ERRO: o input não começa com 111 ou não termina com 000.");
